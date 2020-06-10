@@ -1,0 +1,28 @@
+.mobile-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 25px;
+
+    @media(min-width: 768px){
+        display: none;
+    }
+}
+
+.mobile-menu__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu__phone{
+    font-size: 12px;
+}
+
+.mobile-menu__img{
+    margin-right: 16px;
+}

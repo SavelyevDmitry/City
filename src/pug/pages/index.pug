@@ -1,0 +1,10 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Главная";
+
+block content
+    include ../sections/header.pug
+
+    script(src="./js/libs/jquery-3.5.0.min.js")
+    script(src="./js/mobile-menu.js")

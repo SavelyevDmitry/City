@@ -1,0 +1,43 @@
+header.header
+
+    .container
+
+        .mobile-menu
+
+            .mobile-menu__wrapper
+                img(src="./img/header/menu.svg", alt="").mobile-menu__img
+                .mobile-menu__text Меню
+
+            .mobile-menu__phone +7 (925) 164–50–03
+        
+        .header-info
+
+            .header-info__text
+                .header-info__text-town г. Воскресенск
+                .header-info__text-phone +7 (925) 164–50–03
+
+            .header-info__logo
+                img(src="./img/header/logo.svg", alt="Citymed", width = "244px")
+
+            .header-info__time
+                .header-info__time-hours 08:00 – 20:00   
+                .header-info__time-days Без выходных
+            
+            +header-button("Регистратура", link="#")
+
+        nav.header-nav
+
+            .header-nav__buttons
+                +header-button("Регистратура", link="#")
+                .header-nav__buttons-input
+                    input(type="search", placeholder="Поиск").header-nav__input
+                    .header-nav__buttons-icon
+                        img(src="./img/header/search.svg", alt="Поиск")
+
+            ul.header-nav__list
+
+                +header-nav-item("О центре", "#")
+                +header-nav-item("Акции", "#")
+                +header-nav-item("Услуги", "#")
+                +header-nav-item("Скидки", "#")
+                +header-nav-item("Контакты", "#")    
