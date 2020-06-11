@@ -1,0 +1,7 @@
+mixin service-item(title, img, link="#", color="#038696")
+    a(href= link).services-item(style= `background-color: ${color}`)
+
+        .services-item__img
+            img(src="./img/services/" + img, alt= title)
+
+        .services-item__desc #{title}

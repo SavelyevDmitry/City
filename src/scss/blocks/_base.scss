@@ -16,8 +16,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: $text-color-with-bg;
-    background-color: indianred;
-    height: 8000px;
 }
 
 a, 
@@ -68,11 +66,27 @@ button{
     padding: 0 25px;
 
     @media(min-width: $tabletSize){
-        max-width: 660px; 
+        max-width: 660px;
+        padding: 0; 
     }
 
     //Десктоп   
     @media(min-width: $desktopSize){
         max-width: 1105px;
     }
+}
+
+.main-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: $primary-text-color;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 32px;  
+    }
+}
+
+.main-title.bold{
+    font-weight: 900;
 }

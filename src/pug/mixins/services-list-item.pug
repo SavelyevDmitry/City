@@ -1,0 +1,7 @@
+mixin services-list-item(title, img, link="#")
+    li.services-list__item
+        a(href= link)
+            .services-list__img
+                img(src="./img/services-list/" + img, alt="")
+
+            .services-list__desc #{title}

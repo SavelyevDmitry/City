@@ -1,0 +1,24 @@
+.services-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        flex-direction: row;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        max-width: 1105px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.services{
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        padding-top: 62px;
+    }
+
+}

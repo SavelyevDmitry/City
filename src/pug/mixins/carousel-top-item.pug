@@ -1,9 +1,10 @@
-mixin carousel-top-item(title, img, link="#")   
-    .carousel-top__item
-        .carousel-top__img-wrap
-            .carousel-top__img
-                img(src="./img/action-top/" + img, alt= title)
-        .carousel-top__desc
-            h3 #{title}
-            block
-            a(href= link).carousel-top-button Подробнее 
+mixin carousel-top-item(title, img, link="#", color="gray")   
+    .carousel-top__item(style=`background-color: ${color}`)
+        a(href= link)
+            .carousel-top__img-wrap
+                .carousel-top__img
+                    img(src="./img/action-top/" + img, alt= title)
+            .carousel-top__desc
+                h3 #{title}
+                block
+                a(href= link).carousel-top-button Подробнее 

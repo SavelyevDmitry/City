@@ -22,29 +22,36 @@
     flex-direction: column;
     align-items: center;
 
+    background-image: url("../img/action-top/bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    a{
+        color: $text-color-with-bg;
+    }
+
+    a:visited{
+        color: $text-color-with-bg;
+    }
     //Планшет    
     @media(min-width: $tabletSize){
         flex-direction: row-reverse;
-        justify-content: space-between;
-        max-width: 768px;
-        margin-right: auto;
-        margin-left: auto;
+        justify-content: center;
+        // max-width: 768px;
+        // margin-right: auto;
+        // margin-left: auto;
     }
 
     //Десктоп   
     @media(min-width: $desktopSize){
-        max-width: 1105px;
+        // max-width: 1105px;
     }
+    
 }
 
 .carousel-top__img-wrap{
-    width: 100%;
-    background-color: #8FBF4C;
-    background-image: url("../img/action-top/bg.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-
     display: flex;
     justify-content: center;
 
@@ -88,10 +95,12 @@
         align-items: flex-start;
         text-align: start;
         height: unset;
+        width: unset;
 
         position: relative;
         margin-right: -130px;
         margin-left: 30px;
+        max-width: 570px;
 
         h3{
             margin-bottom: 32px;
@@ -145,7 +154,7 @@
 .owl-carousel{
     //Планшет    
     @media(min-width: $tabletSize){
-        background-color: #8FBF4C;
+        // background-color: #8FBF4C;
         background-image: url("../img/action-top/bg.svg");
         background-position: center;
         background-repeat: no-repeat;
@@ -153,11 +162,12 @@
     }
 }
 
-// .owl-nav{
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-// }
+.owl-nav{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
 
 .owl-prev{
     width: 6px;
