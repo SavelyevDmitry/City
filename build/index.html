@@ -4,10 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <META name="ROBOTS" CONTENT="noindex, nofollow"> </META>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:900|Montserrat:300,300i,400,500,700|Playfair+Display&amp;display=swap&amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,900&amp;display=swap"/>
-    <title>Главная</title>
+    <link rel="stylesheet" href="./css/libs/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/libs/owl.theme.default.min.css"/>
+    <title>СитиМед</title>
   </head>
   <body>
     <header class="header">
@@ -46,7 +49,33 @@
         </nav>
       </div>
     </header>
-    <script src="./js/libs/jquery-3.5.0.min.js"></script>
+    <main>
+      <section class="actions-top">
+        <div class="owl-carousel owl-theme" id="owl-carousel-top">
+          <div class="carousel-top__item">
+            <div class="carousel-top__img-wrap">
+              <div class="carousel-top__img"><img src="./img/action-top/carousel-1.png" alt="консультация гинеколога"/></div>
+            </div>
+            <div class="carousel-top__desc">
+              <h3>консультация гинеколога</h3>
+              <p>только в феврале всего&nbsp;от 750 руб!</p><a class="carousel-top-button" href="#">Подробнее </a>
+            </div>
+          </div>
+          <div class="carousel-top__item">
+            <div class="carousel-top__img-wrap">
+              <div class="carousel-top__img"><img src="./img/action-top/carousel-2.png" alt="Вакцинация детей"/></div>
+            </div>
+            <div class="carousel-top__desc">
+              <h3>Вакцинация детей</h3>
+              <p>Пентаксим инфанринкс гекса ММР2</p><a class="carousel-top-button" href="#">Подробнее </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/libs/jquery.min.js"></script>
+    <script src="./js/libs/owl.carousel.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

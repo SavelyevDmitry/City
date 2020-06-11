@@ -59,9 +59,23 @@ gulp.task('copy:img', function(callback) {
 	callback();
 });
 
+// Копирование css библиотек
+gulp.task('copy:css-libs', function(callback) {
+	return gulp.src(['./src/scss/libs/*.*'])
+	  .pipe(gulp.dest('./build/css/libs'))
+	callback();
+});
+
+// Копирование js библиотек
+gulp.task('copy:js-libs', function(callback) {
+	return gulp.src('./node_modules/jquery/dist/jquery.min.js')
+	  .pipe(gulp.dest('./build/js/libs'))
+	callback();
+});
+
 // Копирование Скриптов
 gulp.task('copy:js', function(callback) {
-	return gulp.src('./src/js/**/*.*')
+	return gulp.src(['./src/js/**/*.*'])
 	  .pipe(gulp.dest('./build/js/'))
 	callback();
 });
@@ -105,7 +119,7 @@ gulp.task(
 		'default', 
 		gulp.series( 
 			gulp.parallel('clean:build'),
-			gulp.parallel('scss', 'pug', 'copy:img', 'copy:js'), 
+			gulp.parallel('scss', 'pug', 'copy:img', 'copy:js','copy:js-libs', 'copy:css-libs'), 
 			gulp.parallel('server', 'watch'), 
 			)
 	);

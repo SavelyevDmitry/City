@@ -15,7 +15,7 @@
     }
  
     //Планшет    
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         margin-bottom: 49px;
         flex-direction: row;
         justify-content: space-between;
@@ -23,7 +23,7 @@
     }
 
     //Десктоп   
-    @media(min-width: 1920px){
+    @media(min-width: $desktopSize){
 
         .header-nav__buttons-link{
             display: block;
@@ -36,7 +36,7 @@
     margin-bottom: 16px;
 
     //Планшет    
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         display: flex;
         flex-direction: column;
         order: 1;
@@ -45,11 +45,15 @@
     }
 }
 
+.header-info__text-town{
+    text-transform: uppercase;
+}
+
 .header-info__text-phone{
     display: none;
 
     //Планшет    
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         display: block;
     }
 }
@@ -58,7 +62,7 @@
     margin-bottom: 16px;  
 
     //Десктоп   
-    @media(min-width: 1920px){
+    @media(min-width: $desktopSize){
         width: 244px;
         
         img{
@@ -71,7 +75,7 @@
     display: flex;
 
     //Планшет    
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         flex-direction: column-reverse;
         align-items: center;
     }

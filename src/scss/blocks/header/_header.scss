@@ -3,19 +3,19 @@
     overflow: hidden;
     padding-top: 25px;
     padding-bottom: 13px;
-    background: #038696;
+    background-color: $primary-bg-color;
 
     display: flex;
     flex-direction: column;
 
     //Планшет    
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         padding-top: 50px;
         padding-bottom: 27px;
     }
 
     //Десктоп   
-    @media(min-width: 1920px){
+    @media(min-width: $desktopSize){
         padding-bottom: 37px;
     }
 }

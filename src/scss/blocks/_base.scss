@@ -14,7 +14,8 @@ body{
     height: 100%;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    font-weight: 400;
+    color: $text-color-with-bg;
     background-color: indianred;
     height: 8000px;
 }
@@ -45,6 +46,7 @@ p {
 
 img{
     max-width: 100%;
+    max-height: 100%;
     display: block;
     height: auto;
 }
@@ -65,12 +67,12 @@ button{
     margin-right: auto;
     padding: 0 25px;
 
-    @media(min-width: 768px){
+    @media(min-width: $tabletSize){
         max-width: 660px; 
     }
 
     //Десктоп   
-    @media(min-width: 1920px){
+    @media(min-width: $desktopSize){
         max-width: 1105px;
     }
 }

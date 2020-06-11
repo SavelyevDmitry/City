@@ -1,10 +1,14 @@
 extends ./../layouts/main.pug
 
 block variables
-    - const title = "Главная";
+    - const title = "СитиМед";
 
 block content
     include ../sections/header.pug
+    main
+        include ../sections/actions-top.pug
 
-    script(src="./js/libs/jquery-3.5.0.min.js")
+    script(src="./js/libs/jquery.min.js")
+    script(src="./js/libs/owl.carousel.min.js")
     script(src="./js/mobile-menu.js")
+    script(src="./js/carousel.js")

@@ -1,8 +1,15 @@
 // libs
 
 // blocks
+@import "./blocks/colors";
+@import "./blocks/variables";
 @import "./blocks/base";
-@import "./blocks/header";
-@import "./blocks/mobile-menu";
-@import "./blocks/header-info";
-@import "./blocks/header-nav";
+@import "./blocks/buttons";
+
+@import "./blocks/header/header";
+@import "./blocks/header/mobile-menu";
+@import "./blocks/header/header-info";
+@import "./blocks/header/header-nav";
+
+@import "./blocks/actions-top/actions-top";
+@import "./blocks/actions-top/carousel-top";
