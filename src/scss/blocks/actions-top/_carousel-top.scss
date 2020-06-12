@@ -170,20 +170,21 @@
 
 .owl-nav{
     position: absolute;
-    top: 45%;
+    top: 46%;
     left: 0;
     width: 100%;
 }
 
 .owl-prev{
     width: 7px;
-    height: 12px;
+    height: 14px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 18%;
+    left: 17.7%;
 
     background-image: url("../img/action-top/prev.svg") !important;
+    background-position: center;
 
     //Доп точка 
     @media(min-width: 2200px){
@@ -198,13 +199,14 @@
 
 .owl-next{
     width: 7px;
-    height: 12px;
+    height: 14px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 18%;
+    right: 17.7%;
 
     background-image: url("../img/action-top/next.svg") !important;
+    background-position: center;
 
     //Доп точка 
     @media(min-width: 2200px){
