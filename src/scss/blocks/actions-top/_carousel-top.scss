@@ -176,7 +176,7 @@
 }
 
 .owl-prev{
-    width: 6px;
+    width: 7px;
     height: 12px;
     position: absolute;
     top: 50%;
@@ -197,7 +197,7 @@
 }
 
 .owl-next{
-    width: 6px;
+    width: 7px;
     height: 12px;
     position: absolute;
     top: 50%;
@@ -205,6 +205,8 @@
     right: 18%;
 
     background-image: url("../img/action-top/next.svg") !important;
+    background-position: center 0;
+    background-size: cover;
 
     //Доп точка 
     @media(min-width: 2200px){
