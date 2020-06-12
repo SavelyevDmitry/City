@@ -1,9 +1,10 @@
 .carousel-top__img{
-    width: 320px;
+    // width: 320px;
     height: 320px;
 
     img{
         height: 320px;
+        float: right;
     }
 
     //Планшет    
@@ -26,7 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    // width: 100%;
 
     a{
         color: $text-color-with-bg;
@@ -178,6 +179,16 @@
     left: 18%;
 
     background-image: url("../img/action-top/prev.svg") !important;
+
+    //Доп точка 
+    @media(min-width: 2200px){
+        left: 22%;
+    }
+
+    //Доп точка 
+    @media(min-width: 2600px){
+        left: 25%;
+    }
 }
 
 .owl-next{
@@ -189,4 +200,14 @@
     right: 18%;
 
     background-image: url("../img/action-top/next.svg") !important;
+
+    //Доп точка 
+    @media(min-width: 2200px){
+        right: 22%;
+    }
+
+    //Доп точка 
+    @media(min-width: 2600px){
+        right: 25%;
+    }
 }
