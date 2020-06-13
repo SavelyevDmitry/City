@@ -101,11 +101,9 @@
 
     &:hover{
         background-color: $primary-button-color-hover;
-        border: 1px solid $primary-button-color-hover;
     }
 
     &:active{
         background-color: $primary-button-color-active;
-        border: 1px solid $primary-button-color-active;
     } 
 }
