@@ -61,14 +61,14 @@ gulp.task('copy:img', function(callback) {
 
 // Копирование css библиотек
 gulp.task('copy:css-libs', function(callback) {
-	return gulp.src(['./src/scss/libs/*.*'])
+	return gulp.src(['./src/scss/libs/*.*', './node_modules/flickity/dist/flickity.min.css'])
 	  .pipe(gulp.dest('./build/css/libs'))
 	callback();
 });
 
 // Копирование js библиотек
 gulp.task('copy:js-libs', function(callback) {
-	return gulp.src('./node_modules/jquery/dist/jquery.min.js')
+	return gulp.src(['./node_modules/jquery/dist/jquery.min.js', './node_modules/flickity/dist/flickity.pkgd.min.js'])
 	  .pipe(gulp.dest('./build/js/libs'))
 	callback();
 });

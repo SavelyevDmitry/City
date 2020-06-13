@@ -1,0 +1,53 @@
+.slider__item{
+    width: 224px;
+    margin-right: 16px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 264px;    
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 240px;
+    }
+}
+
+.slider__item-img{
+    height: 144px;
+    background-color: $bg-action-bot-header; 
+    display: flex;
+    justify-content: center; 
+}
+
+.slider__item-footer{
+    padding: 24px 0 32px;
+    background-color: $bg-action-bot-footer;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.slider__item-title{
+    max-width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    color: $text-action-bot-title;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.slider__item-desc{
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
+    color: $text-action-bot-desc;
+    font-size: 14px;
+    line-height: 1.3;
+}
+

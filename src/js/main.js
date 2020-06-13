@@ -1,3 +1,4 @@
+// Мобильное меню
 $(document).ready(function () {
     // Отображение мобильного меню
     const mobileMenuIcon = document.querySelector(".mobile-menu__img");
@@ -30,3 +31,38 @@ $(document).ready(function () {
     })
 })
 
+// Action-top
+$(document).ready(function(){
+    $('#owl-carousel-top').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 800,
+        smartSpeed: 800,
+        items: 1,
+        responsive:{
+            0:{
+
+            },
+            768:{
+
+            },
+            1280:{
+                nav: true,
+                navText: ['', ''],
+                navSpeed: 800
+            }
+        }
+    });
+});
+
+// slider-bot
+$('.actions-bot__slider').flickity({
+    freeScroll: true,
+    contain: true,
+    // disable previous & next buttons and dots
+    prevNextButtons: false,
+    pageDots: false
+  });
+  

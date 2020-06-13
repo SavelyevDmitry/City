@@ -187,6 +187,10 @@
 
     background-image: url("../img/action-top/prev.svg") !important;
     background-position: center;
+
+    &:hover{
+        background-color: transparent !important;
+    }
 }
 
 .owl-next{
@@ -199,4 +203,8 @@
 
     background-image: url("../img/action-top/next.svg") !important;
     background-position: center;
+
+    &:hover{
+        background-color: transparent !important;
+    }
 }

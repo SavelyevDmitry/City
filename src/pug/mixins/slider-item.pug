@@ -1,0 +1,11 @@
+mixin slider-item(title, desc, img, link="#")   
+    .slider__item
+        .slider__item-img
+            img(src="./img/action-bot/" + img, alt= title)
+
+        .slider__item-footer
+            .slider__item-title #{title}
+
+            .slider__item-desc #{desc}
+
+            a(href= link).slider__item-button Подробнее
