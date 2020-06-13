@@ -63,6 +63,11 @@ $('.actions-bot__slider').flickity({
     contain: true,
     // disable previous & next buttons and dots
     prevNextButtons: false,
-    pageDots: false
+    pageDots: false,
+    // wrapAround: true,
+    // groupCells: 2,
+    autoPlay: true,
+    autoPlay: 3000,
+    pauseAutoPlayOnHover: true
   });
   

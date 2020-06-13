@@ -1,0 +1,27 @@
+.registry{
+    display: none;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        display: block;
+    }
+}
+
+.registry__title{
+    text-align: center;
+    display: none;
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+        margin-bottom: 96px;
+    }
+}
+
+.registry__form-wrapper{
+    //Планшет    
+    @media(min-width: $tabletSize){
+        background-color: #CED2D9;
+        height: 576px;
+    }
+
+}

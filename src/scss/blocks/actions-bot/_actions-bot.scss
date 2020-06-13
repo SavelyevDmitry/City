@@ -12,6 +12,23 @@
     }
 }
 
+.action-bot__wrapper{
+    padding: 0 24px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        padding: 0 56px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        padding: 0;
+        width: 1105px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 .actions-bot__title{
     margin-bottom: 32px;
     text-align: center;

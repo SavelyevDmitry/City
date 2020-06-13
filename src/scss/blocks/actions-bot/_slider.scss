@@ -2,10 +2,6 @@
     width: 224px;
     margin-right: 16px;
 
-    &:last-child{
-        margin-right: 0;
-    }
-
     //Планшет    
     @media(min-width: $tabletSize){
         width: 264px;    
@@ -14,6 +10,11 @@
     //Десктоп   
     @media(min-width: $desktopSize){
         width: 240px;
+        margin-right: 48px;
+
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 
