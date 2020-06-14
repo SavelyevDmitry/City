@@ -1,0 +1,7 @@
+mixin footer-list(navItems)
+
+    ul.footer__list
+        
+        each item in navItems
+            li.footer__list-item 
+                a(href= item.link).footer__list-link #{item.title}

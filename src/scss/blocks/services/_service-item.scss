@@ -3,13 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 1s;
 
     height: 192px;
-
-    &:hover{
-        box-shadow: 0 0 10px 1px black;
-    }
 
     //Планшет    
     @media(min-width: $tabletSize){

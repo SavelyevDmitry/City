@@ -1,0 +1,237 @@
+.footer{
+    padding-bottom: 32px;
+    color: $primary-text-color;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        padding-top: 148px;
+        padding-bottom: 96px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        padding-top: 168px;
+        padding-bottom: 122px;
+    }
+}
+
+.footer__title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 20px;
+        text-align: start;
+    }
+}
+   
+.footer-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+            
+.footer__license {
+    margin-bottom: 32px;
+
+    p{
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    p:first-child{
+        color: $secondary-text-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    p:last-child{
+        color: $primary-text-color;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        p{
+            width: unset;
+        }
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 240px;
+        margin-bottom: 0;
+        margin-right: 48px;
+
+        p{
+            max-width: 210px;
+            margin-left: unset;
+            margin-right: unset;
+            text-align: start;
+        }
+    }
+}
+
+.footer__services{
+    display: none;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+        width: 240px;
+        margin-right: 48px;
+    }
+}
+
+.footer__info{
+    margin-bottom: 32px;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 0;
+        width: 240px;
+        margin-right: 48px;
+    }
+}
+
+.footer__info-list-wrap{
+    display: none;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+.footer__info-phone-item{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    color: $primary-text-color;
+
+    &:visited{
+        color: $primary-text-color;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        font-size: 16px;
+        text-align: start;
+    }
+}
+
+.footer__entry-wrap{
+    display: none;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+        width: 240px;
+        margin-bottom: 106px;
+    }
+}
+
+.footer__social-wrap{
+    justify-content: center;
+    display: flex;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        justify-content: flex-start;
+    }
+}
+
+.footer__social-item{
+    margin-right: 16px;
+
+    background-color: $bg-footer-social;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    color: $text-color-with-bg;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.5s;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:visited{
+        color: $text-color-with-bg;    
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__list-item{
+    margin-left: 16px;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: -16px;
+        width: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary-text-color;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 3px;
+        height: 1px;
+        background-color: $primary-text-color;
+        transition: 0.7s;
+    }
+
+    &:hover::after{
+        width: 0;
+    }
+}
+
+.footer__list-link{
+    font-size: 14px;
+    line-height: 1.3;
+    color: $primary-text-color;
+
+    &:visited{
+        color: $primary-text-color;
+    }
+}

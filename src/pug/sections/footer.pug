@@ -1,0 +1,49 @@
+- const footerListFirst = [{title: "Аллергология", link: "#"}, {title: "Гастроэнтерология", link: "#"}, {title: "Гинекология", link: "#"}, {title: "Кардиология", link: "#"}, {title: "ЛОР", link: "#"}, {title: "Массаж", link: "#"}, {title: "Онкология", link: "#"}, {title: "Офтальмология", link: "#"}, {title: "Педиатрия", link: "#"}, {title: "Процедуры", link: "#"}, {title: "Стоматология", link: "#"}, {title: "Терапия", link: "#"}, {title: "УЗИ", link: "#"}, {title: "Хирургия", link: "#"}, {title: "Эндокринологогия", link: "#"}]
+
+- const footerListSecond = [{title: "Адрес и время работы", link: "#"}, {title: "Политика конфиденциальности", link: "#"}, {title: "Документы", link: "#"}, {title: "Скидки", link: "#"}]
+
+- const footerListThird = [{title: "Регистратура", link: "#"}]
+
+footer.footer
+    .container
+        .footer-wrap
+            .footer__license 
+                p © 2019 СИТИМЕД МЕДИЦИНСКИЙ ЦЕНТР
+                p Лицензия — ЛО-50-01-011654 от 21 января 2020
+
+            .footer__services
+                .footer__title Услуги:
+
+                +footer-list(footerListFirst)
+
+            .footer__info
+                .footer__info-list-wrap
+                    .footer__title Информация:
+
+                    +footer-list(footerListSecond)
+
+                .footer__info-phone-wrap
+                    .footer__title Телефоны:
+
+                    ul.footer__info-phone
+                        li
+                            a(href="tel:+74964464003").footer__info-phone-item +7 (496) 446–40–03
+                        li
+                            a(href="tel:+79251645003").footer__info-phone-item +7 (925) 164–50–03
+
+            .footer__entry
+                .footer__entry-wrap
+                    .footer__title Запись и вызов:
+
+                    +footer-list(footerListThird)
+
+                .footer__social
+                    .footer__title Социальные сети:
+
+                    .footer__social-wrap
+                        a(href="#").footer__social-item
+                            <i class="fab fa-vk"></i>
+                        a(href="#").footer__social-item
+                            <i class="fab fa-instagram"></i>
+                        a(href="#").footer__social-item
+                            <i class="fab fa-odnoklassniki"></i>

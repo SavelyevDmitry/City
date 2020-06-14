@@ -23,14 +23,9 @@
     height: 128px;
     background-color: $primary-bg-color;
     color: $secondary-bg-color;
-    transition: 1s;
 
     &:visited{
         color: $secondary-bg-color;
-    }
-
-    &:hover{
-        box-shadow: 0 0 10px 1px black;
     }
 
     //Планшет    

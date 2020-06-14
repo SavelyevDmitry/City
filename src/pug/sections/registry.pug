@@ -2,5 +2,31 @@ section.registry
     .registry__title
         h2.main-title Регистратура онлайн
 
-    .registry__form-wrapper
+    .registry-form__wrapper
+        form.registry-form
+            .registry-form__item
+                input.registry-form__field(type="text", name="name", placeholder="ФИО")
+
+            .registry-form__item
+                input.registry-form__field(type="text", name="phone", placeholder="Телефон")
+
+            .registry-form__item.registry-form__item--select
+                select(name="doctor", size="1", required).registry-form__select
+                    option(disabled) Выберите врача
+                    option(value="Гинеколог") Гинеколог
+                    option(value="Аллерголог") Аллерголог
+                    option(value="Окулист") Окулист
+                    option(value="Терапевт") Терапевт
+                    option(value="Гинеколог") Гинеколог
+
+            .registry-form__item
+                textarea.registry-form__area(name="massage", placeholder="Сообщение")
+
+            .registry-form__item
+                label
+                    input(type="checkbox")
+                    | Даю согласие на обработку персональных данных
+                
+            .registry-form__button
+                input(type="submit", value="Отправить")
         

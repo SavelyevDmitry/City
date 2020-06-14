@@ -52,6 +52,12 @@
 .header-info__text-phone{
     display: none;
 
+    color: $text-color-with-bg;
+
+    &:visited{
+        color: $text-color-with-bg;
+    }
+
     //Планшет    
     @media(min-width: $tabletSize){
         display: block;
