@@ -2,17 +2,18 @@ extends ./../layouts/main.pug
 
 block variables
     - const title = "СитиМед";
+    - const titleService = "Услуги медицинского центра"
+    - const titleRegistry = "Ругистратура онлайн"
 
 block content
-    include ../sections/header.pug
     main
         include ../sections/actions-top.pug
         include ../sections/services.pug
-        include ../sections/medServices.pug
+
+        include ../sections/med-services.pug
         include ../sections/statistics.pug
         include ../sections/actions-bot.pug
         include ../sections/registry.pug
-        include ../sections/footer.pug
 
     script(src="./js/libs/jquery.min.js")
     script(src="./js/libs/owl.carousel.min.js")

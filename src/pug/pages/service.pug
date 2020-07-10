@@ -1,0 +1,16 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "СитиМед - Услуги";
+    - const titleService = "Услуги"
+
+block content
+    main
+        +sub-menu([{title: "Главная", link: "./index.html"}, {title: "Услуги"}])
+        include ../sections/med-services.pug
+        include ../sections/registry.pug
+
+    script(src="./js/libs/jquery.min.js")
+    script(src="./js/libs/owl.carousel.min.js")
+    script(src="./js/libs/flickity.pkgd.min.js")
+    script(src="./js/service.js")

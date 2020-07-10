@@ -1,9 +1,9 @@
 section.registry
     .registry__title
-        h2.main-title Регистратура онлайн
+        h2.main-title #{titleRegistry}
 
     .registry-form__wrapper
-        form.registry-form
+        form#registry-form.registry-form
             .registry-form__item
                 input.registry-form__field(type="text", name="name", placeholder="ФИО")
 
@@ -12,7 +12,7 @@ section.registry
 
             .registry-form__item.registry-form__item--select
                 select(name="doctor", size="1", required).registry-form__select
-                    option(disabled) Выберите врача
+                    option(selected value="") Выберите врача
                     option(value="Гинеколог") Гинеколог
                     option(value="Аллерголог") Аллерголог
                     option(value="Окулист") Окулист
@@ -23,8 +23,9 @@ section.registry
                 textarea.registry-form__area(name="massage", placeholder="Сообщение")
 
             .registry-form__item
-                label
-                    input(type="checkbox")
+                label.registry-form__item-label
+                    input(type="checkbox" id="checkbox" name="check")
+                    .custom-check
                     | Даю согласие на обработку персональных данных
                 
             .registry-form__button

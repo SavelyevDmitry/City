@@ -1,0 +1,9 @@
+mixin sub-menu(navItems)
+    section.sub-menu
+        .container
+
+            ul.sub-menu__list
+            
+                each item in navItems
+                    li.sub-menu__list-item 
+                        a(href= item.link).sub-menu__list-link #{item.title}

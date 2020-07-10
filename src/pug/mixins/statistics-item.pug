@@ -1,4 +1,4 @@
-mixin statistics-item(number, desc, color="#038696")   
-    .statistics__item(style=`background-color: ${color}`)
+mixin statistics-item(number, desc, color="#038696", link = "#")   
+    a(href= link).statistics__item(style=`background-color: ${color}`)
         .statistics__item-number #{number}
         .statistics__item-desc #{desc}

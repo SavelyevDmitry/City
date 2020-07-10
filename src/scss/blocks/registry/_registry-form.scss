@@ -10,6 +10,7 @@
         background-size: cover;
         background-color: #9CB5BF;
         height: 576px;
+        overflow-x: hidden;
     }
 
 }
@@ -19,19 +20,27 @@
     height: 528px;
     background-color: white;
     padding: 48px;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 448px;
+        right: -178px;
+        width: 228px;
+        z-index: 2;
+        background-image: url("../img/registry/bg-form.png");
+    }
 }
 
 .registry-form__item{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
-    overflow: hidden;
-
-    label{
-        color: #697080;
-        font-size: 14px;
-        cursor: pointer;
-    }
+    overflow-x: hidden;
 }
 
 .registry-form__field{
@@ -103,6 +112,7 @@
     background-color: $bg-action-bot-footer;
     color: $primary-text-color;
     font-size: 16px;
+    resize: none;
     
     &:focus{
         outline: none;
@@ -113,22 +123,44 @@
     }
 }
 
-.registry-form__button{
-    margin-top: 32px;
-    width: 144px;
-    height: 48px;
-    margin-right: auto;
-    margin-left: auto;
+.registry-form__item-label{
+    position: relative;
+    color: #697080;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 40px;
 
     input{
-        background-color: $primary-button-color;
-        width: 100%;
-        height: 100%;
-        border: unset;
-        border-radius: 24px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: $text-color-with-bg;
+        display: none;
     }
+}
+
+.custom-check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $bg-action-bot-header;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $primary-text-color;
+
+        display: none;
+    }
+}
+
+#checkbox:checked + .custom-check::before{
+    display: block;
 }

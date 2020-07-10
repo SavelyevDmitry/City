@@ -70,4 +70,4 @@ $('.actions-bot__slider').flickity({
     autoPlay: 3000,
     pauseAutoPlayOnHover: true
   });
-  
+ 
