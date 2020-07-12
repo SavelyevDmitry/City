@@ -22,6 +22,11 @@
 
 .price-item__desc{
     max-width: 175px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        max-width: unset;
+    }
 }
 
 .price-item__price{
