@@ -1,0 +1,50 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Услуги - кардиология";
+    - const servicePageTitle = "Кардиология";
+    - const timetable1 = {dates: ["09", "10", "11", "12", "13", "14", "15"], time: {md: "", td: "09:00 - 11:00", wd: "09:00 - 11:00", th: "09:00 - 11:00", fd: "09:00 - 11:00", st: "", sd: ""}};
+    - const timetable2 = {dates: ["09", "10", "11", "12", "13", "14", "15"], time: {md: "", td: "09:00 - 11:00", wd: "09:00 - 11:00", th: "09:00 - 11:00", fd: "09:00 - 11:00", st: "", sd: ""}};
+    - const doctor1 = "Асташенков Юрий Федорович";
+    - const doctor2 = "Воропаев Евгений Сергеевич";
+
+block content
+    main
+        +sub-menu([{title: "Главная", link: "./index.html"}, {title: "Услуги", link: "./service.html"}, {title: "Кардиология"}])
+        section.service-page
+            .container
+                .service-page__wrap
+                    ul.service-page__list
+                        +service-page-item("Аллергология", "01.svg")
+                        +service-page-item("Гастроэнтерология", "02.svg")
+                        +service-page-item("Гинекология", "03.svg")
+                        +service-page-item-active("Кардиология", "04.svg", "./service-cardiology.html")
+                        +service-page-item("ЛОР", "05.svg")
+                        +service-page-item("Массаж", "06.svg")
+                        +service-page-item("Онкология", "07.svg")
+                        +service-page-item("Офтальмология", "08.svg")
+                        +service-page-item("Педиатрия", "09.svg")
+                        +service-page-item("Процедуры", "10.svg")
+                        +service-page-item("Стоматология", "11.svg")
+                        +service-page-item("Терапия", "12.svg")
+                        +service-page-item("УЗИ", "13.svg")
+                        +service-page-item("Хирургия", "14.svg")
+                        +service-page-item("Эндокринологогия", "15.svg")
+
+                    .service-page__info
+                        .service-page__main-title-wrap
+                            h2.main-title.bold #{servicePageTitle}
+                        .service-page__title-wrap
+                            h3.page-title Расписание
+
+                        +timetable-doctor(doctor1)
+                        +timetable(timetable1)
+
+                        +timetable-doctor(doctor2)
+                        +timetable(timetable2)
+
+                        .service-page__button
+                            button.button-next Далее  
+
+    script(src="./js/libs/jquery.min.js")
+    script(src="./js/pageService.js")

@@ -1,0 +1,30 @@
+mixin timetable(Items)
+    .timetable
+        .timetable__row
+            .timetable__data Пн #{Items.dates[0]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.md}
+        .timetable__row
+            .timetable__data Вт #{Items.dates[1]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.td}
+        .timetable__row
+            .timetable__data Ср #{Items.dates[2]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.wd} 
+        .timetable__row
+            .timetable__data Чт #{Items.dates[3]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.th}
+        .timetable__row
+            .timetable__data Пт #{Items.dates[4]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.fd}
+        .timetable__row
+            .timetable__data Сб #{Items.dates[5]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.st}
+        .timetable__row
+            .timetable__data Вс #{Items.dates[6]}
+            .timetable__time
+                .timetable__time-wrap #{Items.time.sd}

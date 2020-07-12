@@ -1,0 +1,7 @@
+mixin service-page-item-active(title, img, link="#")
+    li.service-page__item
+        a(href= link).active
+            .services-page__img
+                img(src="./img/services-list/" + img, alt="")
+
+            .services-page__desc #{title}

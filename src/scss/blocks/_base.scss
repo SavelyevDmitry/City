@@ -91,3 +91,13 @@ button{
     font-weight: 900;
     text-transform: uppercase;
 }
+
+.page-title{
+    font-size: 32px;
+    font-weight: 500;
+    color: $primary-text-color;
+}
+
+.none{
+    display: none !important;
+}

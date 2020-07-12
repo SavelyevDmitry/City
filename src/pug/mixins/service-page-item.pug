@@ -1,0 +1,7 @@
+mixin service-page-item(title, img, link="#")
+    li.service-page__item
+        a(href= link)
+            .services-page__img
+                img(src="./img/services-list/" + img, alt="")
+
+            .services-page__desc #{title}
