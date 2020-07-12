@@ -5,8 +5,10 @@ block variables
     - const servicePageTitle = "Кардиология";
     - const timetable1 = {dates: ["09", "10", "11", "12", "13", "14", "15"], time: {md: "", td: "09:00 - 11:00", wd: "09:00 - 11:00", th: "09:00 - 11:00", fd: "09:00 - 11:00", st: "", sd: ""}};
     - const timetable2 = {dates: ["09", "10", "11", "12", "13", "14", "15"], time: {md: "", td: "09:00 - 11:00", wd: "09:00 - 11:00", th: "09:00 - 11:00", fd: "09:00 - 11:00", st: "", sd: ""}};
+    - const timetable3 = {dates: ["09", "10", "11", "12", "13", "14", "15"], time: {md: "", td: "09:00 - 11:00", wd: "09:00 - 11:00", th: "09:00 - 11:00", fd: "09:00 - 11:00", st: "", sd: ""}};
     - const doctor1 = "Асташенков Юрий Федорович";
     - const doctor2 = "Воропаев Евгений Сергеевич";
+    - const doctor3 = "Мирошкина-Акопян Марина Александровна";
 
 block content
     main
@@ -34,17 +36,10 @@ block content
                     .service-page__info
                         .service-page__main-title-wrap
                             h2.main-title.bold #{servicePageTitle}
-                        .service-page__title-wrap
-                            h3.page-title Расписание
 
-                        +timetable-doctor(doctor1)
-                        +timetable(timetable1)
-
-                        +timetable-doctor(doctor2)
-                        +timetable(timetable2)
-
-                        .service-page__button
-                            button.button-next Далее  
+                        include ../sections/service/cardiology/timetable.pug     
+                        include ../sections/service/cardiology/price.pug
+                        include ../sections/service/cardiology/info.pug 
 
     script(src="./js/libs/jquery.min.js")
     script(src="./js/pageService.js")

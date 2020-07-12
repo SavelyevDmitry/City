@@ -1,9 +1,12 @@
 .service-page{
-    padding: 32px 0;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    color: $primary-text-color;
 
     //Планшет    
     @media(min-width: $tabletSize){
-        padding: 72px 0;
+        padding-top: 72px;
+        padding-bottom: 0;
     }
 }
 
@@ -76,22 +79,45 @@
     margin-left: auto;
     margin-right: auto;
 
-    //Десктоп   
+    //планшет 
     @media(min-width: $tabletSize){
         max-width: unset;
-        width: unset;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 65%;
     }
 }
 
 .service-page__main-title-wrap{
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 48px;
+    }
 }
 
 .service-page__title-wrap{
-    margin-bottom: 64px;
+    margin-bottom: 48px;
+    margin-top: 48px;
 }
 
 .service-page__button{
     display: flex;
     justify-content: center;
+}
+
+.service-page__red-line{
+    display: inline-block;
+    width: 48px;
+    height: 2px;
+    background-color: $primary-button-color;
+    margin-bottom: 24px;
+}
+
+.service-page__offer{
+    font-size: 16px;
+    margin-bottom: 48px;
 }

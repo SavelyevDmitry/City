@@ -5,6 +5,10 @@
     flex-direction: column;
     margin-bottom: 48px;
 
+    &:last-child{
+        margin-bottom: 0;
+    }
+
     //Планшет    
     @media(min-width: $tabletSize){
         flex-direction: row;
@@ -108,5 +112,25 @@
         bottom: 0;
         height: 1px;
         width: 100%;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 24px;
+        font-weight: 500;
+
+        span::before{
+            width: 0;
+        }
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        font-size: 16px;
+        font-weight: 700;
+
+        span::before{
+            width: 100%;
+        }
     }
 }
