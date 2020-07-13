@@ -1,0 +1,9 @@
+mixin doctors-list-item(surname, name, desc, img = "no-photo.png", link = "#")  
+    li.doctors__list-item
+        a(href= link)
+            .doctors__list-img
+                img(src="./img/doctors/" + img, alt= surname + " " + name)
+            .doctors__list-name #{surname}
+                br
+                | #{name}
+            .doctors__list-desc #{desc}

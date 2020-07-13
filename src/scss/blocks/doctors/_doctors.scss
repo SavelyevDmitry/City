@@ -1,0 +1,142 @@
+.doctors{
+    padding-bottom: 64px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        padding-bottom: 0;
+        max-width: unset;
+    }
+}
+
+.doctors__title{
+    margin-top: 42px;
+    margin-bottom: 32px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 96px;
+        margin-top: 79px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        text-align: center;
+        margin-bottom: 72px;
+    }
+}
+
+.doctors__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doctors__list-item{
+    width: 128px;
+    margin-right: 14px;
+    margin-bottom: 48px;
+
+    a{
+        display: inline-block;
+        max-width: 240px;
+        color: $primary-text-color;
+        transition: 0.7s;
+    }
+
+    a:visited{
+        color: $primary-text-color;
+    }
+
+    a:hover{
+        color: $doctor-color-hover;
+
+        .doctors__list-img{
+            background-color: $secondary-button-color;
+        }
+    }
+
+    &:nth-child(2n){
+        margin-right: 0;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-right: 96px;
+        margin-bottom: 72px;
+        width: 240px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-right: 176px;
+        margin-bottom: 88px;
+
+        &:nth-child(2n){
+            margin-right: 176px;
+        }
+    
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+    
+        &:nth-last-child(2){
+            margin-bottom: 0;
+        }
+    }
+}
+                   
+.doctors__list-name{
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 16px;
+    }
+}
+
+.doctors__list-desc{
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.3;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 16px;
+    }
+}
+
+.doctors__list-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 96px;
+    height: 96px;
+    border-radius: 120px;
+    overflow: hidden;
+    background-color: $bg-action-bot-header;
+    transition: 0.7s;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 240px;
+        height: 240px;
+        margin-bottom: 48px;
+    }
+}

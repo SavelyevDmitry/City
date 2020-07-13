@@ -134,3 +134,11 @@
         }
     }
 }
+
+.timetable__doctor-link{
+    color: $primary-text-color;
+
+    &:visited{
+        color: $primary-text-color;
+    }
+}
