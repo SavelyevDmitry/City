@@ -1,0 +1,28 @@
+section.doctors-info
+    .container
+        .doctors-info__wrapper
+            .doctors-info__img-wrapper
+                +doctors-img(img, title)
+
+            .doctors-info__info
+
+                .doctors-info__title-wrap
+                    h3.page-title #{doctorName}
+                .doctors-info__desc
+                    +doctors-text(desc)
+                
+                .doctors-info__info-img
+                    +doctors-img(img, title)
+
+                h4.doctors-info__title Расписание
+                .doctors-info__timetable
+                    +timetable(doctorTime)
+
+                h4.doctors-info__title Образование:
+                .doctors-info__education 
+                    +doctors-text(doctorEducation)
+                
+                h4.doctors-info__title Зоны профессионального интереса:
+                .doctors-info__profession
+                    +doctors-text(doctorProfession)
+

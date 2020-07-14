@@ -151,3 +151,33 @@
         background-color: $primary-button-color-active;
     }
 }
+
+.btn-singup{
+    margin-bottom: 32px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: $primary-button-color;
+    font-size: 14px;
+    color: $text-color-with-bg;
+
+    &:visited{
+        color: $text-color-with-bg;       
+    }
+
+    &:hover{
+        background-color: $primary-button-color-hover;
+    }
+
+    &:active{
+        background-color: $primary-button-color-active;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 72px;
+    }
+}

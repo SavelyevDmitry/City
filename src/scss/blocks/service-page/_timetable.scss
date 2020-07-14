@@ -45,7 +45,7 @@
 }
 
 .timetable__data{
-    width: 36%;
+    width: 96px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,13 +58,18 @@
     @media(min-width: $tabletSize){
         width: 94px;
     }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 103px;
+    }
 } 
 
 .timetable__time {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 64%;
+    width: 176px;
     height: 48px;
     border: 1px solid $primary-text-color;
     border-bottom: none;
@@ -75,6 +80,11 @@
         width: 94px;
         height: 80px;
         border-bottom: 1px solid $primary-text-color;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 103px;
     }
 }
 
