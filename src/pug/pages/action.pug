@@ -1,0 +1,19 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "CityMed - Акции";
+    - const titleActionPage = "Действующие акции";
+    - const timeAction1 = "Предложение действительно с 01 марта по 31 мая 2020 г.";
+    - const titleAction1 = "Консультация гинеколога всего от 750 руб!";
+    - const imgAction1 = "carousel-1.png";
+    - const timeAction2 = "Предложение действительно с  01 января по 31 марта 2020 г";
+    - const titleAction2 = "Вакцинация детей Пентаксим инфанринкс гекса ММР2";
+    - const imgAction2 = "carousel-2.png";
+    - const timeAction3 = "Предложение действительно с  01 апреля по 31 мая 2020 г";
+    - const titleAction3 = "Скидка 20% на терапевта";
+    - const imgAction3 = "carousel-2.png";
+
+block content
+    main
+        +sub-menu([{title: "Главная", link: "./index.html"}, {title: "Акции"}])
+        include ../sections/action-page.pug

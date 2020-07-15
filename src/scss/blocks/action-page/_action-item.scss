@@ -1,0 +1,132 @@
+.action-item__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        justify-content: unset;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 120px;
+    }
+}
+
+.action-item__info-img{
+    margin-bottom: 24px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        display: none;
+        margin-bottom: 0;
+    }
+}
+
+.action-item__img-wrap{
+    margin-right: 40px;
+    display: none;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        display: block;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 33%;
+        margin-right: 0;
+    }
+}
+
+.action-item__img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $bg-action-bot-header;
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-right: unset;
+        margin-left: unset;
+    }
+}
+
+.action-item__time{
+    margin-bottom: 24px;
+    text-align: center;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        text-align: unset;
+    }
+}
+
+.action-item__time-text{
+    font-size: 12px;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        font-size: 16px;
+    }
+}
+
+.action-item__title{
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-align: center;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        text-align: unset;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        font-size: 32px;
+    }
+}
+
+.action-item__btn-wrap{
+    display: flex;
+    justify-content: center;
+
+    .btn-singup.little{
+        margin-right: 16px;
+        margin-bottom: 0;
+
+        //Планшет    
+        @media(min-width: $tabletSize){
+            margin-right: 32px;
+        }
+
+        //Десктоп   
+        @media(min-width: $desktopSize){
+            margin-right: 48px;
+        }
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        justify-content: unset;
+    }
+}

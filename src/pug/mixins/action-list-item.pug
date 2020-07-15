@@ -1,0 +1,20 @@
+mixin action-list-item(timeAction, titleAction, imgAction, link1 = "#", link2 = "#")
+    .action-item__wrap
+        .action-item__img-wrap
+            .action-item__img
+                img(src="./img/action-top/" + imgAction, alt= titleACtion)
+        
+        .action-item__info-wrap
+            .action-item__time 
+                p.action-item__time-text #{timeAction}
+            h3.action-item__title #{titleAction}
+
+            .action-item__info-img
+                .action-item__img
+                    img(src="./img/action-top/" + imgAction, alt= titleACtion)
+
+            .action-item__btn-wrap
+                a(href= link2).btn-singup.little Записаться
+                a(href= link1).btn-info Подробнее
+            
+

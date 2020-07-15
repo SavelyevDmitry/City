@@ -181,3 +181,46 @@
         margin-bottom: 72px;
     }
 }
+
+.btn-singup.little{
+    width: 128px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 152px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 144px;
+    }
+}
+
+.btn-info{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 48px;
+    width: 128px;
+    border-radius: 24px; 
+    font-size: 14px;
+    color: $btn-info-text-color;
+    background-color: $bg-action-bot-footer; 
+    
+    &:visited{
+        color: $btn-info-text-color;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 152px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 144px;
+    }
+}
+
+
+
