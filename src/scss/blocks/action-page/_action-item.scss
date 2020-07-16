@@ -19,6 +19,13 @@
     }
 }
 
+.action-item__info-wrap{
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 77%;
+    }
+}
+
 .action-item__info-img{
     margin-bottom: 24px;
 
