@@ -1,0 +1,239 @@
+.action-info{
+    padding-top: 44px;
+    padding-bottom: 64px;
+    color: $primary-text-color;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        padding-top: 79px;
+        padding-bottom: 0;
+    }
+}
+
+.action-info__img-wrap{
+    display: flex;
+    flex-direction: column;
+
+    .action-info__title{
+        //Планшет    
+        @media(min-width: $tabletSize){
+            display: none;
+        }
+    }
+}
+
+.action-info__desc{
+
+    .action-info__title{
+        display: none;
+
+        //Планшет    
+        @media(min-width: $tabletSize){
+            display: block;
+        }
+    }
+}
+
+.action-info__img{
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 1104px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: $bg-action-bot-footer;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 48px;
+
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 72px;
+    }
+}
+
+.action-info__desc-wrap{
+display: flex;
+}
+
+.action-info__actions{
+    display: none;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+        width: 43%;
+    }
+}
+
+.action-info__link{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.action-info__link-img{
+    margin-right: 20px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $bg-action-bot-header;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+.action-info__link-title{
+    font-size: 16px;
+    line-height: 1.3;
+    text-decoration: underline;
+    width: 116px;
+}
+
+.action-info__title{
+    margin-bottom: 24px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 32px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 72px;
+    }
+}
+
+.doctors-info__title.tablet-center{
+    text-align: unset;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: unset;
+    }
+}
+ 
+.action-info__info-wrap{
+    margin-bottom: 24px;
+
+    p{
+        margin-bottom: 24px;
+        font-size: 14px;
+
+        //Планшет    
+        @media(min-width: $tabletSize){
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+    }
+
+    span{
+        display: block;
+        margin-bottom: 24px;
+        font-size: 16px;
+        font-weight: 500;
+
+        //Планшет    
+        @media(min-width: $tabletSize){
+            margin-bottom: 32px;
+            font-size: 24px;
+        }
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 72px;
+    }
+
+}
+
+.action-info__list-item{
+    position: relative;
+    padding-left: 20px;
+    font-size: 14px;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $primary-text-color;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 16px;
+    }
+}
+
+.action-form{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 336px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+.registry-form__field.action{
+    padding-left: 24px;
+
+}
+
+.registry-form__item-label.action{
+    font-size: 12px;
+    padding-left: 32px;
+    display: inline-block;
+    width: 265px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: unset;
+    }
+
+    p{
+        display: inline-block;
+
+    }
+}
+
+.registry-form__button.action{
+    margin-top: 0;
+    width: 100%;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-top: 32px;
+    }
+}

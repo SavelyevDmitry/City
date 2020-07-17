@@ -1,0 +1,56 @@
+.action-info__time-form{
+    background-color: $bg-action-bot-footer;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 336px;
+    display: none;
+
+    p{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    margin-bottom: 72px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        display: block;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: none;
+    }
+}
+
+.time-form__date-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-form__date-item{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: $text-action-bot-desc;
+    color: $secondary-button-color;
+}
+
+.time-form__date-time{
+    height: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.time-form__date{
+    height: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

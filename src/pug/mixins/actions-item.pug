@@ -1,0 +1,6 @@
+mixin actions-item(title, img, link ="#")
+    a(href= link).action-info__link
+        .action-info__link-img
+            img(src="./img/action-top/" + img, alt= title)
+        span.action-info__link-title #{title}
+            

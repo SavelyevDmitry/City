@@ -1,0 +1,22 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "CityMed - Акции";
+
+block content
+    main
+        +sub-menu([{title: "Главная", link: "./index.html"}, {title: "Акции", link: "./action.html"}, {title: "Консультация гинеколога всего от 750 руб!"}])
+        section.action-info
+
+            .action-info__img-wrap
+                .container
+                    .action-info__title
+                        h2.main-title.bold Консультация гинеколога всего от 750 руб!
+
+                .action-info__img
+                    img(src="./img/action-top/carousel-1.png", alt="Консультация гинеколога")
+
+            .container    
+                .action-info__desc-wrap
+                    include ../sections/action-info-actions.pug
+                    include ../sections/action-info-info.pug
