@@ -1,0 +1,65 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Контакты";
+
+block content
+    main
+        +sub-menu([{title: "Главная", link: "./index.html"}, {title: "Контакты"}])
+        section.contacts-page
+            .container
+                .contacts__title-wrap
+                    h2.main-title.bold Контакты
+
+            .contacts-page__wrap
+                .contacts-page__map-wrap
+                    .container
+                        .contacts-page__title «СитиМед» на карте
+                    .contacts-page__map
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/tsentr_semeynoy_meditsiny_sitimed/28359227829/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Центр семейной медицины СитиМед</a><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/medical_center_clinic/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Медцентр, клиника в Москве и Московской области</a><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/medical_lab/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Медицинская лаборатория в Москве и Московской области</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQlJMBH2D" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>  
+
+                .container
+                    .contacts-page__contacts
+                        .contacts-page__contacts-item
+                            .contacts-page__contacts-title Адрес:
+
+                            .contacts-page__contacts-desc 
+                                p г. Воскресенск
+                                p Новлянский квартал, 
+                                p село Новлянское, 8м
+
+                        .contacts-page__contacts-item
+                            .contacts-page__contacts-title Время работы:
+
+                            .contacts-page__contacts-desc 
+                                p 08:00 – 20:00  (без выходных)
+                                p График приема врачей уточняйте по телефону.
+
+                        .contacts-page__contacts-item
+                            .contacts-page__contacts-title Телефоны:
+
+                            .contacts-page__contacts-desc                     
+                                p
+                                    a(href="tel:+79251645003") +7 (925) 16–45–003
+                                p 
+                                    a(href="tel:+74964464003") +7 (496) 44–64–003
+
+                        .contacts-page__contacts-item
+                            .contacts-page__contacts-title Почта: 
+
+                            .contacts-page__contacts-desc 
+                                a(href="mailto:citimedvsk@mail.ru") citimedvsk@mail.ru
+
+                            .contacts-page__contacts-title.social Соцсети: 
+
+                            .contacts-page__contacts-desc
+                                p 
+                                    a(href="#") Instagram
+                                p
+                                    a(href="#") Вконтакте
+                                p
+                                    a(href="#") Одноклассники 
+            .contacts-page__title-registry                      
+                .contacts-page__title Напишите нам                   
+            include ../sections/registry-contacts.pug
+

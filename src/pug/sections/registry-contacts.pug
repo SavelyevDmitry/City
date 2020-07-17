@@ -1,0 +1,26 @@
+section.registry-contacts
+    .registry__title
+        h2.main-title #{titleRegistry}
+
+    .registry-form__wrapper
+        form#registry-form.registry-form
+            .registry-form__item
+                input.registry-form__field(type="text", name="name", placeholder="ФИО")
+
+            .registry-form__item
+                input.registry-form__field(type="text", name="phone", placeholder="Телефон")
+
+            .registry-form__item
+                input.registry-form__field(type="text", name="email", placeholder="Email")
+
+            .registry-form__item
+                textarea.registry-form__area(name="massage", placeholder="Сообщение")
+
+            .registry-form__item
+                label.registry-form__item-label
+                    input(type="checkbox" id="checkbox" name="check")
+                    .custom-check
+                    | Даю согласие на обработку персональных данных
+                
+            .registry-form__button
+                input(type="submit", value="Отправить")

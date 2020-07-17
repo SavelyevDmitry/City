@@ -1,0 +1,184 @@
+.contacts-page{
+    padding-top: 42px;
+    padding-bottom: 72px;
+
+    color: $primary-text-color;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        padding-top: 79px;
+        padding-bottom: 0;
+    }
+}
+
+.contacts__title-wrap{
+    margin-bottom: 34px;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 48px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 72px;
+    }
+}
+
+.contacts-page__map{
+    margin-bottom: 32px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+
+    iframe{
+        border: none;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-bottom: 0;
+    }
+
+}
+
+.contacts-page__wrap{
+    display: flex;
+    flex-direction: column;
+    
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        flex-direction: column-reverse;
+    }
+}
+
+.contacts-page__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        font-size: 20px;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.contacts-page__contacts{
+    display: flex;
+    flex-direction: column;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+     //Десктоп   
+    @media(min-width: $desktopSize){
+        justify-content: space-between;
+    }
+}
+
+.contacts-page__contacts-item{
+    margin-bottom: 32px;
+    font-size: 16px;
+    text-align: center;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 50%;
+        text-align: unset;
+
+        &:nth-last-child(3){
+            order: 4;
+        }
+
+        &:nth-last-child(2){
+            order: 3;
+        }
+
+        &:last-child{
+            order: 5;
+        }
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        width: 335px;
+        margin-bottom: 72px;
+
+        .contacts-page__contacts-title{
+            width: 385px;
+        }
+
+        &:nth-last-child(3){
+            order: 0;
+        }
+
+        &:nth-last-child(2){
+            order: 0;
+        }
+
+        &:last-child{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            order: 0;
+            width: 670px;
+            height: 100px;
+            margin-bottom: 72px;
+        }
+    }
+}
+
+.contacts-page__contacts-title{
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.contacts-page__contacts-title.social{
+    margin-top: 24px;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        margin-top: 0;
+    }
+}
+
+.contacts-page__contacts-desc{
+    a{
+        color: $secondary-text-color;
+    }
+
+    a:visited{
+        color: $secondary-text-color;
+    }
+} 
+
+.contacts-page__title-registry{
+    text-align: center;
+    display: none;
+
+    .contacts-page__title{
+        margin-top: 72px;
+        margin-bottom: 0;
+    }
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+    }
+}

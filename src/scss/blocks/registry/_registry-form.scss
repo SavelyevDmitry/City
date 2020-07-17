@@ -15,6 +15,15 @@
 
 }
 
+.registry-contacts{
+    display: none;
+
+    //Десктоп   
+    @media(min-width: $desktopSize){
+        display: block;
+    }
+}
+
 .registry-form{
     width: 528px;
     height: 528px;
