@@ -74,6 +74,11 @@ display: flex;
     margin-bottom: 32px;
     display: flex;
     align-items: center;
+    color: $primary-text-color;
+
+    &:visited{
+        color: $primary-text-color;
+    }
 }
 
 .action-info__link-img{
