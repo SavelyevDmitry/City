@@ -1,26 +1,28 @@
 .action-info__time-form{
     background-color: $bg-action-bot-footer;
     padding: 16px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 336px;
-    display: none;
+    max-width: 336px;
+    margin-bottom: 32px;
 
     p{
         font-size: 12px;
         margin-bottom: 12px;
     }
 
-    margin-bottom: 72px;
-
     //Планшет    
     @media(min-width: $tabletSize){
-        display: block;
+        width: 336px;
+        max-width: unset;
+        margin-bottom: 72px;
     }
 
     //Десктоп   
     @media(min-width: $desktopSize){
-        display: none;
+        margin-left: unset;
+        margin-right: unset;
     }
 }
 
@@ -41,10 +43,15 @@
    
   .countdown-number {
     padding: 7px;
-    width: 64px;
+    width: 55px;
     border-radius: 3px;
     background-color: $text-action-bot-desc;
     display: inline-block;
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        width: 64px;
+    }
   }
    
   .countdown-time {

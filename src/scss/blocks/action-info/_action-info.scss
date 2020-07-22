@@ -196,11 +196,13 @@ display: flex;
 
 .action-form{
     width: 100%;
+    max-width: 336px;
     margin-left: auto;
     margin-right: auto;
 
     //Планшет    
     @media(min-width: $tabletSize){
+        max-width: unset;
         width: 336px;
     }
 
