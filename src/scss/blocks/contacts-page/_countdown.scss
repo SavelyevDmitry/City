@@ -24,33 +24,37 @@
     }
 }
 
-.time-form__date-wrap{
+.countdown-title {
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: $primary-text-color;
+    font-weight: 400;
+  }
+   
+  .countdown {
+    color: $secondary-button-color;
     display: flex;
     justify-content: space-between;
-}
-
-.time-form__date-item{
-    width: 64px;
-    height: 64px;
-    display: flex;
-    flex-direction: column;
-    background-color: $text-action-bot-desc;
-    color: $secondary-button-color;
-}
-
-.time-form__date-time{
-    height: 50%;
+    text-align: center;
     font-size: 24px;
+  }
+   
+  .countdown-number {
+    padding: 7px;
+    width: 64px;
+    border-radius: 3px;
+    background-color: $text-action-bot-desc;
+    display: inline-block;
+  }
+   
+  .countdown-time {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
-
-.time-form__date{
-    height: 50%;
+    margin-bottom: 5px;
+  }
+   
+  .countdown-text {
+    display: flex;
+    justify-content: center;
     font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+  }

@@ -20,22 +20,20 @@
             p Предложение действительно с 01 марта по 31 мая 2020 г
 
         .action-info__time-form
-            p До окончания акции осталось:
-            .time-form__date-wrap
-                .time-form__date-item
-                    .time-form__date-time 01
-                    .time-form__date месяц
-                .time-form__date-item
-                    .time-form__date-time 01
-                    .time-form__date день
-                .time-form__date-item
-                    .time-form__date-time 01
-                    .time-form__date час
-                .time-form__date-item
-                    .time-form__date-time 01
-                    .time-form__date минута
-
-
+            h1.countdown-title До окончания акции осталось:
+            #countdown.countdown
+                .countdown-number
+                    span.days.countdown-time
+                    span.countdown-text дней
+                .countdown-number
+                    span.hours.countdown-time
+                    span.countdown-text часов
+                .countdown-number
+                    span.minutes.countdown-time
+                    span.countdown-text минут
+                .countdown-number
+                    span.seconds.countdown-time
+                    span.countdown-text секунд
 
         h4.doctors-info__title.tablet-center Оставить заявку
 
