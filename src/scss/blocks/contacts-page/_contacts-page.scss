@@ -27,17 +27,23 @@
 
 .contacts-page__map{
     margin-bottom: 32px;
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
 
     iframe{
         border: none;
+        width: 100%;
+    }
+
+    //Планшет    
+    @media(min-width: $tabletSize){
+        margin-bottom: 72px;
     }
 
     //Десктоп   
     @media(min-width: $desktopSize){
         margin-bottom: 0;
+        max-width: 1104px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -56,9 +62,6 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 32px;
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
 
     //Планшет    
     @media(min-width: $tabletSize){
@@ -138,7 +141,7 @@
             flex-wrap: wrap;
             order: 0;
             width: 670px;
-            height: 100px;
+            height: 104px;
             margin-bottom: 72px;
         }
     }
@@ -180,5 +183,6 @@
     //Десктоп   
     @media(min-width: $desktopSize){
         display: block;
+        margin-bottom: -50px;
     }
 }
